@@ -19,15 +19,12 @@ h1{
 }
 
 
-@media (min-width: 740px) {
+@media (min-width: 970px) and (max-width: 1130px) {
   .center {
-    width: 65%
+    width: 85%
   }
-}
-
-@media (min-width: 970px) {
-  .center {
-    width: 55%
+  h1{
+    font-size: 100px;
   }
 }
 
