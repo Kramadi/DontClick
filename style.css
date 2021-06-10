@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-image: url(img/art-fon.jpg); 
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+
+@media (min-width: 740px) {
+  .center {
+    width: 65%
+  }
+}
+
+@media (min-width: 970px) {
+  .center {
+    width: 55%
+  }
+}
+
+@media (min-width: 1130px) {
+  .center {
+    width: 45%
+  }
+}
+
+@media (min-width: 1360px) {
+  .center {
+    width: 35%
+  }
+}
