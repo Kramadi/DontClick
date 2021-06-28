@@ -169,3 +169,22 @@ tsParticles.load("tsparticlesPhone", {
     }
   }
 });
+
+
+function startElonMuskForPhone() {
+  var times = 1;
+  function go() {
+    if (times % 2) {
+      ElonMusk.classList.remove('back');
+      ElonMusk.style.marginLeft =  70 + '%'; 
+    } else {
+      ElonMusk.classList.add('back');
+      ElonMusk.style.marginLeft =  0 + '%';
+    }
+  }
+  go();
+  ElonMusk.addEventListener('transitionend', function startElonMuskForPhone() {
+    times++;
+    go();
+  });
+}

@@ -38,6 +38,11 @@ h1{
   text-shadow: rgb(56, 10, 223) 1px 0 10px;
 }
 
+#ElonMusk {
+  width: 0%;
+  height: 0%;
+}
+
 @media (min-width: 970px) and (max-width: 1130px) {
   .center {
     width: 85%
@@ -59,6 +64,22 @@ h1{
     height: 0%;
     z-index: 0;
   }
+
+
+  #ElonMusk {
+    width: 30%;
+    height: 30%;
+    margin-left: 0;
+    cursor: pointer;
+    transition: margin-left 3s ease-in-out;
+  }
+  
+  .back {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: fliph;
+  }
+  
 }
 
 @media (min-width: 1130px) {
