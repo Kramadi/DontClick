@@ -1,12 +1,28 @@
 body{
     background-image: url(img/art-fon.jpg); 
+    
 }
+
+canvas {
+  display: block;
+}
+
+
+#tsparticles {
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
 
 .center{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+    background: repeat-y;
 }
 
 h1{
