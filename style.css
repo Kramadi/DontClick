@@ -7,15 +7,19 @@ canvas {
   display: block;
 }
 
+#tsparticlesPhone {
+  position: fixed;
+  width: 0%;
+  height: 0%;
+  z-index: 0;
+}
 
-#tsparticles {
-
+#tsparticlesPC {
   position: fixed;
   width: 100%;
   height: 100%;
   z-index: 0;
 }
-
 
 .center{
     display: block;
@@ -34,13 +38,26 @@ h1{
   text-shadow: rgb(56, 10, 223) 1px 0 10px;
 }
 
-
 @media (min-width: 970px) and (max-width: 1130px) {
   .center {
     width: 85%
   }
   h1{
     font-size: 100px;
+  }
+
+  #tsparticlesPhone {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  #tsparticlesPC {
+    position: fixed;
+    width: 0%;
+    height: 0%;
+    z-index: 0;
   }
 }
 
@@ -54,4 +71,5 @@ h1{
   .center {
     width: 33%
   }
+
 }
