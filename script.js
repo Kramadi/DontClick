@@ -170,7 +170,6 @@ tsParticles.load("tsparticlesPhone", {
   }
 });
 
-
 function startElonMuskForPhone() {
   var times = 1;
   function go() {
@@ -188,3 +187,20 @@ function startElonMuskForPhone() {
     go();
   });
 }
+
+function startLeftAndRight() {
+  var times = 1;
+  right.classList.add('back');
+  function goFace() {
+    if (times % 2) {
+      left.classList.add('back');
+      right.classList.remove('back');
+    } else {
+      left.classList.remove('back');
+      right.classList.add('back');
+    }
+    times++;
+  }
+  setInterval(() => goFace(), 500)
+}
+startLeftAndRight();

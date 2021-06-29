@@ -1,6 +1,5 @@
 body{
     background-image: url(img/art-fon.jpg); 
-    
 }
 
 canvas {
@@ -22,7 +21,7 @@ canvas {
 }
 
 .center{
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -38,12 +37,23 @@ h1{
   text-shadow: rgb(56, 10, 223) 1px 0 10px;
 }
 
+#container {
+  width:100%;
+  text-align:center;
+}
+
 #ElonMusk {
   width: 0%;
   height: 0%;
 }
 
-@media (min-width: 970px) and (max-width: 1130px) {
+.back {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: fliph;
+}
+
+@media (min-width: 970px) and (max-width: 1130px) {     /*  Phone  */
   .center {
     width: 85%
   }
@@ -74,12 +84,21 @@ h1{
     transition: margin-left 3s ease-in-out;
   }
   
-  .back {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: fliph;
+  
+  #ElonMuskRight {
+    width: 0%;
+    height: 0%;
+  }
+
+  #left {
+    width: 0%;
+    height: 0%;
   }
   
+  #right {
+    width: 0%;
+    height: 0%;
+  }
 }
 
 @media (min-width: 1130px) {
@@ -88,9 +107,24 @@ h1{
   }
 }
 
-@media (min-width: 1360px) {
+@media (min-width: 1360px) {    /*  PC  */
   .center {
     width: 33%
   }
 
+  #left {
+    width: 20%;
+    height: 20%;
+    margin-right: 9%;
+    margin-bottom: 13%;
+    transition: margin-left 3s ease-in-out;
+  }
+  
+  #right {
+    width: 20%;
+    height: 20%;
+    margin-left: 9%;
+    margin-bottom: 13%;
+    transition: margin-left 3s ease-in-out;
+  }
 }
